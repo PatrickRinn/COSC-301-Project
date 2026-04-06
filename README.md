@@ -22,12 +22,12 @@ Using a dataset of ~35,000 titles, we track the journey from raw marketplace dat
 ## Workflow
 1.  **Ingestion & Cleaning (`data_cleaning.ipynb`):**
     *   Parses raw JSON data acquired from the [Steam-Games-Scraper](https://github.com/FronkonGames/Steam-Games-Scraper).
-    *   Handles missing values, dataframe form, and creates relational tables.
+    *   Handles missing values, Renames columns, Handles type conversions, and creates relational tables.
     *   Saves cleaned data into `steam_games.db`.
 2.  **Analysis & Insights (`analysis.ipynb`):**
     *   Connects to the SQLite database to query cleaned data.
     *   Performs Exploratory Data Analysis (EDA) on market health (Dead/Ghost games).
-    *   Computes complex correlations and categorical aggregations.
+    *   Computes correlations and categorical aggregations to answer our research questions.
 3.  **Export:**
     *   Generates targeted CSVs (e.g., `hidden_gems.csv`, `cult_classics.csv`) for further visualization or reporting.
 
